@@ -61,6 +61,7 @@ if __name__ == "__main__":
 
     Convert(os.path.join(IN_ROOT, "role_show"), os.path.join(OUT_ROOT, "role_show"))
     Convert(os.path.join(IN_ROOT, "vip_show"), os.path.join(OUT_ROOT, "vip_show"))
+    Convert(os.path.join(IN_ROOT, "hero_show"), os.path.join(OUT_ROOT, "hero_show"))
 
     OUT_PUT_JSON_NAME = "slice_img.json"
 
@@ -85,3 +86,5 @@ if __name__ == "__main__":
     else:
         Log.Info("写入配置文件 => " + OUT_PUT_JSON_NAME)
         json.dump({"slice_img": frames}, open(os.path.join(OUT_ROOT, OUT_PUT_JSON_NAME), "w"))
+
+    raw_input("finish！！！")

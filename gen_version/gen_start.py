@@ -24,13 +24,13 @@ def Start(outDir, projectDir, version, root):
     STEP03_02 = "压缩图片02"
     STEP04 = "生成版本MD5文件"
     STEP05 = "合并库文件"
-    STEP06 = "生成版本号文件"
+    STEP06 = "生成版本号文件`"
     STEP07 = "新版本文件"
 
     step = [
-        # STEP00,
+        STEP00,
 
-        STEP01,
+        # STEP01,
 
         # STEP02,
         # STEP02_02,
@@ -70,6 +70,11 @@ def Start(outDir, projectDir, version, root):
             "resource\\cfg",
 
             # "resource\\assets\\image\\img",
+
+            # "resource\\assets\\movie\\hero",
+
+            # "resource\\sound",
+
             # "resource\\assets\\image\\other",
 
             # "resource\\assets\\atlas_ui",
@@ -108,12 +113,13 @@ def Start(outDir, projectDir, version, root):
         compressPath2 = [
             "resource\\assets\\atlas_font",
 
-            "resource\\assets\\movie\\body",
-            "resource\\assets\\movie\\monster",
+            # "resource\\assets\\movie\\hero",
+            # "resource\\assets\\movie\\body",
+            # "resource\\assets\\movie\\monster",
             # "resource\\assets\\movie\\skillEff",
-            "resource\\assets\\movie\\uiEffe",
-            "resource\\assets\\movie\\weapon",
-            "resource\\assets\\movie\\wing",
+            # "resource\\assets\\movie\\uiEffe",
+            # "resource\\assets\\movie\\weapon",
+            # "resource\\assets\\movie\\wing",
 
             # "resource\\assets\\movie\\eff",
             # "resource\\assets\\movie\\warspirit",

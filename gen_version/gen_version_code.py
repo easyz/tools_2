@@ -213,10 +213,11 @@ def GenVersionCodeFile(root, version):
 		for key in lhsMd5:
 			codeV = lhsVersion
 			# 如果新文件配置里面存在当前文件，并且版本号比遍历到文件号码较大，则不需要比较改文件
-			if newDict.get(key) != None and newDict.get(key) >= codeV:
+			# if newDict.get(key) != None and newDict.get(key) >= codeV:
+			if newDict.get(key) != None:
 				continue
-			# if key == "resource/assets/movie/monster/monster10028_3r.png":
-			# 	print("=============================" + str(codeV))
+			# if key == "resource/assets/atlas2_ui/cm/cm.png":
+			# 	print("=============================1111" + str(codeV))
 			# 向下查找最小的版本号
 			tempmd5 = None
 			for j in range(i, len(versionMd5)):
@@ -230,7 +231,7 @@ def GenVersionCodeFile(root, version):
 				# 	break
 				# else:
 				# 	codeV = v
-			# if key == "resource/assets/movie/monster/monster10028_3r.png":
+			# if key == "resource/assets/atlas2_ui/cm/cm.png":
 			# 	print("=============================" + str(codeV))
 			newDict[key] = codeV
 	# for key in maxMd5:
