@@ -62,6 +62,7 @@ if __name__ == "__main__":
     Convert(os.path.join(IN_ROOT, "role_show"), os.path.join(OUT_ROOT, "role_show"))
     Convert(os.path.join(IN_ROOT, "vip_show"), os.path.join(OUT_ROOT, "vip_show"))
     Convert(os.path.join(IN_ROOT, "hero_show"), os.path.join(OUT_ROOT, "hero_show"))
+    Convert(os.path.join(IN_ROOT, "pet_show"), os.path.join(OUT_ROOT, "pet_show"))
 
     OUT_PUT_JSON_NAME = "slice_img.json"
 

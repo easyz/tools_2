@@ -28,7 +28,7 @@ def Start(outDir, projectDir, version, root):
     STEP07 = "新版本文件"
 
     step = [
-        STEP00,
+        # STEP00,
 
         # STEP01,
 
@@ -40,8 +40,8 @@ def Start(outDir, projectDir, version, root):
 
         # STEP05,
 
-        STEP04,
-        STEP06,
+        # STEP04,
+        # STEP06,
         STEP07,
 
     ]
@@ -68,10 +68,12 @@ def Start(outDir, projectDir, version, root):
         print("===> STEP01")
         copyPath = [
             "resource\\cfg",
-
+            # "resource\\assets\\movie\\skillEff",
+            # "resource\\assets\\movie\\uiEffe",
             # "resource\\assets\\image\\img",
 
             # "resource\\assets\\movie\\hero",
+            # "resource\\assets\\movie\\pet",
 
             # "resource\\sound",
 
@@ -113,11 +115,8 @@ def Start(outDir, projectDir, version, root):
         compressPath2 = [
             "resource\\assets\\atlas_font",
 
-            # "resource\\assets\\movie\\hero",
             # "resource\\assets\\movie\\body",
             # "resource\\assets\\movie\\monster",
-            # "resource\\assets\\movie\\skillEff",
-            # "resource\\assets\\movie\\uiEffe",
             # "resource\\assets\\movie\\weapon",
             # "resource\\assets\\movie\\wing",
 

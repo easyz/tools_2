@@ -72,7 +72,7 @@ def BuildScript(projectDir, outDir):
     oldDir = os.path.join(projectDir, "bin-release\\web\\temp_version_folder")
     copyDir = [
         "libs",
-        "polyfill",
+        # "polyfill",
     ]
     copyFileArray = [
         "resource\\default.thm.json",

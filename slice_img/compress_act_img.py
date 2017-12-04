@@ -21,6 +21,7 @@ INPUT_TYPE[4] = "monster"
 INPUT_TYPE[5] = "hero"
 INPUT_TYPE[6] = "skillEff"
 INPUT_TYPE[7] = "uiEffe"
+INPUT_TYPE[8] = "pet"
 
 if __name__ == "__main__":
 
@@ -28,6 +29,7 @@ if __name__ == "__main__":
     5、英雄
     6、技能
     7、ui特效
+    8、宠物
     """.decode("utf8").encode("gbk"))
     input = int(input or 0)
 
