@@ -94,6 +94,7 @@ def CompressOrigen(dir):
             im = Image.open(path)
             if im.mode != "P":
                 pngFile.append(path)
+            im.close()
 
     for filename in pngFile:
         print("=> compress " + filename)
